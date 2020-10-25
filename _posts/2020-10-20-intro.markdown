@@ -1,8 +1,0 @@
----
-layout: post
-title: "Intro to project"
-date: 2020-10-20 15:44:27 +0100
-categories: intro planning
----
-
-Intro to project goes here

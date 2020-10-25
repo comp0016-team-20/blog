@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Week 1: Project Introduction & Meeting team/client"
+date: 2020-10-25 21:44:27 +0000
+categories: intro planning
+---
+
+# Week 1: Project Introduction & Meeting team/client
+
+This week we were assigned our project for the [UCL COMP0016 Systems Engineering module](https://www.ucl.ac.uk/module-catalogue/modules/systems-engineering/COMP0016).
+
+This project is in partnership with the Science Industry Exchange Programme, where we will work in a group of 3 second-year Computer Science students to develop a solution to a real-world problem defined by our client.
+
+Throughout the next 2 terms, we will be working through the entire software development process, starting from Human-Computer Interaction (HCI) through to integration testing and handing over the project to the client.
+
+This week, we focussed on getting to know our teammates, and understanding the project through a meeting with our client.
+
+## Meeting our team
+
+We were emailed details of our project and teammates. After receiving details of our team, we first created a Microsoft Teams team for meetings, and a WhatsApp group for day-to-day communications, for all three of us.
+
+This proved crucial to good team organisation, as it meant we were easily able to contact each other and discuss the project and meetings without having to use email which tended to be slower and more difficult to access.
+
+## Meeting our client
+
+We arranged a meeting with our client via email, and decided on a Zoom meeting date and time.
+
+We had our first meeting with the client on Thursday 22 October. This was a 20-minute meeting where our client discussed the project with us and pitched the problem.
+
+## The project
+
+Our project is to develop an online self-assessment tool for NHS Wales, concerning the [Health and Safety Standards](http://www.wales.nhs.uk/sitesplus/documents/1064/24729_Health%20Standards%20Framework_2015_E1.pdf) compliance of clinicians. The Health and Safety Standards are a set of 7 standards designed by NHS Wales, as shown in the image below:
+
+<p align="center">
+  <img src="/blog/images/week1-standards-circle.png" width="40%" title="NHSW Health & Safety Standards" />
+</p>
+
+### Current problem
+
+At the moment, there is little-to-no compliance checking done in NHSW — only one standard is tested, and it is done manually on pen-and-paper. This is time-consuming, and due to the nature of the manual checking, it focusses solely on the non-compliance.
+
+This is not ideal, as it demotivates clinicians. It also doesn't help them _improve_ their compliance, and there's no way to track their compliance over time.
+
+Furthermore, there's no ability for departments, hospitals, or Health Boards to determine how well they are meeting the standards.
+
+### The desired solution
+
+The desired solution is a user-friendly web-application that allows clinicians to login, roughly once a week, and perform a quick self-assessment.
+
+The client suggested a mix of Likert scale and open-ended questions to be able to identify how well clinicians are complying with different standards.
+
+In addition, the platform should allow users to visualise compliance over time through graphs and charts. There should be different levels of aggregation for different users (i.e. clinicians should be able to see their own progress/department managers should be able to see the progress for all clinicians in their department/similarly for hospitals and Health Boards).
+
+### Next steps
+
+Having received a brief of the problem and desired solution, we will now adopt a user-centred approach and approach potential users for their views on such a platform. We hope to conduct semi-structured interviews and distribute questionnaires.
