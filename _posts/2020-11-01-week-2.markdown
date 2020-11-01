@@ -20,7 +20,7 @@ As this is just the beginning of our project it was imperative that we did not g
 We had a few calls and ended up deciding on multiple questions about how the users feel about the problem, the current way its done, what they would like and how they would envision the final system. Excerpts of both: 
 
 <p align="center">
-  <img src="/blog/images/week2-interview-questionnaire.png" width="40%" title="Interview/questionnaire results" />
+  <img src="/blog/images/week2-interview-questionnaire.png" width="100%" title="Interview/questionnaire results" />
 </p>
 
 ## Personas
@@ -30,15 +30,15 @@ After analysing and going over interview/questionnaire results we had a better i
 We had to focus on the most important details that would be relevant to how our system is built. For example, we found out all of our users did not want to spend too long on filling out self assessments, which will be crucial information later on when we actually design them. These are the 3 personas we created:
 
 <p align="center">
-  <img src="/blog/images/week2-persona1" width="40%" title="Persona 1" />
+  <img src="/blog/images/week2-persona1.png" width="100%" title="Persona 1" />
 </p>
 
 <p align="center">
-  <img src="/blog/images/week2-persona2" width="40%" title="Persona 2" />
+  <img src="/blog/images/week2-persona2.png" width="100%" title="Persona 2" />
 </p>
 
 <p align="center">
-  <img src="/blog/images/week2-persona3" width="40%" title="Persona 3" />
+  <img src="/blog/images/week2-persona3.png" width="100%" title="Persona 3" />
 </p>
 
 ## Scenarios
@@ -46,15 +46,15 @@ We had to focus on the most important details that would be relevant to how our 
 Once we finalised our user personas we created scenarios to get a full understanding of the problem, our users' pain points and goals. These will act as a great summary of gathering requirements which we can later on easily refer to when we need to evaluate and build our system. These are the 3 scenarios we ended up with:
 
 <p align="center">
-  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 1" />
+  <img src="/blog/images/week2-scenario1.png" width="100%" title="Scenario 1" />
 </p>
 
 <p align="center">
-  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 2" />
+  <img src="/blog/images/week2-scenario2.png" width="100%" title="Scenario 2" />
 </p>
 
 <p align="center">
-  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 3" />
+  <img src="/blog/images/week2-scenario3.png" width="100%" title="Scenario 3" />
 </p>
 
 ## Next steps
