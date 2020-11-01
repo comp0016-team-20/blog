@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Week 2: Gathering Requirements"
+date: 2020-11-01 19:45:32 +0000
+categories: gathering requirements
+---
+
+# Week 2: Gathering Requirements
+
+This week we began on the first stage of our project, HCI - **H**uman **C**omputer **I**nteraction. HCI is design, implementation and evaluation of interactive computer systems focused on the users, as the system being built is for users and to help users. This will be a great base for our project as we will begin with a user centered approach ensuring the system is actually effective and efficient for the user to use.
+
+To kick this off, we decided that we needed to interview/question the users of our system. Due to the physical constraints imposed by the current pandemic we decided on semi-structured interviews on Zoom and a questionnaire using Microsoft Forms. Also, due to the time constraints we decided that it would be good to have a quick questionnaire in conjunction with a semi-structured interview to get the best results instead of attempting to schedule longer interviews with multiple people.
+
+## Interviews/questionnaires
+
+We began by taking a closer look at our project details and deciding what we would actually need to ask our users for our research to be useful and concise.
+
+As this is just the beginning of our project it was imperative that we did not go into fine details so we needed to ask general questions that would both stimulate our users to give their honest opinion and their own ideas of how the system should work.
+
+We had a few calls and ended up deciding on multiple questions about how the users feel about the problem, the current way its done, what they would like and how they would envision the final system. Excerpts of both: 
+
+<p align="center">
+  <img src="/blog/images/week2-interview-questionnaire.png" width="40%" title="Interview/questionnaire results" />
+</p>
+
+## Personas
+
+After analysing and going over interview/questionnaire results we had a better idea of our users and what they want so we could move on to build personas for each of our main user groups: a clinician, department manager and head of Hospital/Health Trust.
+
+We had to focus on the most important details that would be relevant to how our system is built. For example, we found out all of our users did not want to spend too long on filling out self assessments, which will be crucial information later on when we actually design them. These are the 3 personas we created:
+
+<p align="center">
+  <img src="/blog/images/week2-persona1" width="40%" title="Persona 1" />
+</p>
+
+<p align="center">
+  <img src="/blog/images/week2-persona2" width="40%" title="Persona 2" />
+</p>
+
+<p align="center">
+  <img src="/blog/images/week2-persona3" width="40%" title="Persona 3" />
+</p>
+
+## Scenarios
+
+Once we finalised our user personas we created scenarios to get a full understanding of the problem, our users' pain points and goals. These will act as a great summary of gathering requirements which we can later on easily refer to when we need to evaluate and build our system. These are the 3 scenarios we ended up with:
+
+<p align="center">
+  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 1" />
+</p>
+
+<p align="center">
+  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 2" />
+</p>
+
+<p align="center">
+  <img src="/blog/images/week2-scenario1" width="40%" title="Scenario 3" />
+</p>
+
+## Next steps
+
+Now that we have gathered the information we need, we can start actually designing how our final system could look. We hope to create sketches and a prototype.
