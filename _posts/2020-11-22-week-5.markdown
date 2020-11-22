@@ -56,7 +56,7 @@ In particular, the Storages aspect was useful in deciding how to go about our da
 We performed several iterations of this chart to finally decide on the below:
 
 <p align="center">
-  <img src="week5-ipso-chart.jpg" width="100%" title="IPSO chart" />
+  <img src="week5-ipso-chart.png" width="100%" title="IPSO chart" />
 </p>
 
 As shown, this chart describes the exact inputs, processes, storages, and outputs involved in the system.
