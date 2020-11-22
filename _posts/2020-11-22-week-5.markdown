@@ -1,0 +1,135 @@
+---
+layout: post
+title: "Week 5: Planning the backend & beginning the frontend"
+date: 2020-11-22 20:44:44 +0000
+categories: development
+---
+
+# Week 5: Planning the backend & beginning the frontend
+
+This week, we continued research on our login system options, planned an initial database schema, and started development of our first prototype.
+
+## Further Login System research
+
+Following on from last week, we continued researching login options on parallel with our other development efforts.
+
+### NHS Identity
+
+We researched [NHS Identity](https://digital.nhs.uk/services/nhs-identity/) further to determine what data we could get from it, if we used it.
+
+This involved looking through the [Scopes and Claims](https://digital.nhs.uk/services/nhs-identity/guidance-for-developers/detailed-guidance/scopes-and-claims) documentation to see the various data available. We determined that we would need access to the data provided by the *associatedorgs* and *nationalrbacaccess* scopes, to fetch the clinician's Area of Work (department) and Organisation Code (e.g. Hospital).
+
+However, before continuing with the application, we sent an email to the NHS Identity team to clarify whether NHS Identity is suitable for clinicians in Wales — only this week did we see explicit mentions of *England* on the NHS Identity website.
+
+We hope to receive a response soon and take action from there.
+
+### Digital Health Ecosystem Wales
+
+After discovering mentions of only *England* on the NHS Identity website, we discovered the [Digital Health Ecosystem Wales](https://digitalhealth.wales/dhew) and their new [NHS Wales Developer Portal](https://developer.nhs.wales/).
+
+This seems promising, as their [API Catalogue](https://nwisbeta.github.io/apiguides/api-catalogue/) mentions an Account Control API:
+
+<p align="center">
+  <img src="/blog/images/week5-NHSW-account-control-api.png" width="100%" title="NHSW Account Control API" />
+</p>
+
+Unfortunately, further information required registration and the website had some errors on registration, meaning we were unable to dive further into this.
+
+We have also sent an email to the Ecosystem team requesting support for registering to the system, and hope to be able to take action once we receive a response.
+
+### Microsoft Azure Active Directory
+
+Progress on this front was also stalled, as a result of uncertainties surrounding NHS Wales' actual authentication backend.
+
+Our client informed us that they were told a system called *NADEX* is used, however we have been unable to discover more information on this at this stage.
+
+Our main concern is, that if the NHS does *not* use Microsoft Azure Active Directory, then one of the main benefits — being able to 'swap' the authentication backend with NHS' own backend in the future — is taken away.
+
+At this stage we are reconsidering using one of the other login options we considered last week (namely, the unique URL per-manager system), if it turns out the above options are not suitable anymore.
+
+## IPSO Chart
+
+To determine the architecture, we created an IPSO (Inputs-Processes-Storages-Outputs) chart listing the various aspects we would need to take into account. We collaborated on this using Miro.
+
+In particular, the Storages aspect was useful in deciding how to go about our database schema.
+
+We performed several iterations of this chart to finally decide on the below:
+
+<p align="center">
+  <img src="week5-ipso-chart.jpg" width="100%" title="IPSO chart" />
+</p>
+
+As shown, this chart describes the exact inputs, processes, storages, and outputs involved in the system.
+
+Our storages information will be used directly to create an initial database schema.
+
+## Meeting our CS TA
+
+As we have now completed the HCI part of our project we have moved on to the development phase, where instead of a HCI TA we were assigned a UCL CS TA. We had a short but very useful and informative meeting in which we found out more details of the structure of our future meetings and basic information about the TA. 
+
+We have scheduled with our TA for a specific time for the next few weeks and have been informed we need to create a few slides for each meeting showing our progress and any questions we may have.
+
+This week we mainly talked about our future plans, however we did also show our TA our current progress: all we have done for our HCI assignment, our blog, our MOSCOW requirements and went through our first ideas of the stack we will use.
+
+## Development Plan
+
+As a team, in the meetings we had this week, we decided that weekly sprints themed around certain parts of our final solution will be the most effective to produce our system efficiently and to the highest standard possible.
+
+Our plan is to hopefully have each week based around a page/set of components of our final solution and in that week we plan to create a frontend and backend for that page/set of components.
+
+This development cycle will allow us to build our solution in manageable blocks but also makes sure that there are no problems of integration between our frontend and backend. As the frontend and backend are being integrated on a weekly basis we won't have any potential problems of trying to integrate everything at the end.
+
+To start this off we decided to do some pair programming for our self-assessment page. We used the very useful and convenient Visual Studio Code extension called Live Share, which allowed us to write code together in real time while we were in a call, and also share the local server used to run our solution.
+
+## Breakdown of frontend tasks
+
+For the frontend, we determined that the basic components required are as follows:
+
+- **Self-Assessment**
+    - Question (text and Likert scale)
+        - Likert Scale
+        - Information icons (training URLs)
+    - Submit button
+- **Dashboard**
+    - Submit button
+    - Graph
+        - Filters
+        - Toggle
+- Navbar (will be different based on type of user)
+    - User (with dropdown)
+- **Manage questions**
+
+This is of course a first draft and is subject to change through development if we see any improvement or additions, but this gives us a nice idea of how much work needs to be done for the frontend of our project.
+
+Like mentioned above we will integrate each page/set of components with the backend as they are created, so when we create each of them we will need to link to the API endpoints of our backend.
+
+## Breakdown of backend tasks
+
+For the backend, we determined that the tasks required are as follows:
+
+- Create a database schema
+
+    We may use something similar to [Prisma](https://www.prisma.io/) in the actual implementation, to simplify future development and querying
+
+- Create API endpoints for tasks to be performed by the platform:
+    - /self-assessments
+        - GET: get responses for self-assessments
+        - POST: save responses for self-assessments
+    - /feedback
+        - GET: get platform feedback responses
+        - POST: save new platform feedback response
+    - /questions
+        - GET: get questions to be asked
+        - POST: create new questions to be asked
+        - PUT: modify questions to be asked (including e.g. training URLs)
+        - DELETE: delete questions to be asked
+
+With potential iterations on our database design, these API endpoints are subject to change.
+
+However, this plan has given us an initial direction to follow to create our first prototype.
+
+## Next steps
+
+We hope to make progress on the login system front as soon as we receive a response to our emails to Digital Health Ecosystem Wales and/or NHS Digital.
+
+We will also continue development of individual pages and ideally finalise the database design as much as possible.
