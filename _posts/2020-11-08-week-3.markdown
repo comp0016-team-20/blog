@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Week 3: Sketching, Prototyping & Evaluation"
-date: 2020-11-15 17:12:39 +0000
+date: 2020-11-08 17:12:39 +0000
 categories: design and hci
 ---
 
