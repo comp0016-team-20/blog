@@ -84,9 +84,9 @@ function rand(max) {
 
     const imagePath = line.split('(')[1].slice(0, -1).replace(/\%20/g, ' ');
     const newImageFileName = `week-${weekNumber}-image-${imageCounter}.png`;
-    const newImageFilePath = `/blog/${newImageFileName}`;
+    const newImageFilePath = `/blog/images/${newImageFileName}`;
     imageCounter++;
-    lines[i] = `![](${newImageFilePath})`;
+    lines[i] = `<p align="center" width="100%"><img src="${newImageFilePath}" /></p>`;
 
     fs.copyFileSync(imagePath, `../images/${newImageFileName}`);
   }
